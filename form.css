@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body,input{
+    font-family:'Courier New', Courier, monospace,sans-serif, FontAwesome ;
+    height: 100%;
+    max-width: 100%;
+}
+.container{
+    position: relative;
+    width: 100%;
+    padding: 0 15px 0 15px;
+    background-image: url(./img/bg.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.form-container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.col-1 {
+    width: 20%;
+}
+.col-2 {
+    width: auto;
+}
+
+.row {
+    max-width: 1024px;
+}
+
+form {
+    display: flex;
+    align-items: 100%;
+    justify-content:20%;
+    flex-direction: column;
+    padding: 2em 5em;
+    overflow: hidden;
+  }
+form.signin{
+    z-index: 2;
+}
+.title{
+    font-size: 3em;
+    color: wheat;
+    margin-top: 5px;
+}
+.notice{
+    font-size: 1rem;
+    color: white;
+    opacity: 70%;
+    margin-top: 3px;
+    margin-bottom: 40px;
+}
+.input-field-firstname , .input-field-lastname{
+    max-width: 300px;
+    width: 80%;
+    background-color: black;
+    margin: 10px 0;
+    height: 35px;
+    border-radius: 55px;
+    opacity: 70%;
+    display: grid;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    float: left;
+}
+
+/*.input-field-firstnanme {
+    float: left;
+}
+.input-field-lastname {
+    float: right;
+}*/
+.input-field{
+    display: flex;
+    grid-gap:5px;  
+    grid-template-columns:  0.1fr 0.2fr 0.2fr;
+    grid-template-rows: repeat(2, 30px);
+}
+#yourname, #mail , #phone, #message-sub , #messagettt ,#other, #verifical{
+    
+    float: left;
+    color: white;
+}
+.input-gmail{
+    max-width: 600px;
+    width: 60%;
+    background-color: black;
+    margin: 10px 0;
+    height: 35px;
+    border-radius: 55px;
+    opacity: 70%;
+    display: flex;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+}
+.gmail{
+    display: flex;
+    grid-gap:1px;  
+    grid-template-columns: 0.1fr 0.1fr 0.1fr;
+    grid-template-rows: repeat(2, 30px);
+}
+.input-field i {
+    text-align: center;
+    line-height: 35px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+  }
+.input-gmail i {
+    text-align: unset;
+    padding-left: 0.3rem;
+    line-height: 35px;
+    color: #acacac;
+    transition: 0.5s;
+    font-size: 1.1rem;
+}
+.input-gmail input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+  }
+.input-field input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 2.5;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+}
+.phone1, .phone2, .phone3{
+    max-width: 200px;
+    width: 100%;
+    background-color: black;
+    margin: 10px 0;
+    height: 35px;
+    border-radius: 55px;
+    display: flex;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    opacity: 70%;
+    position: relative;
+    float: left;
+}
+#message-subject{
+    max-width: 200px;
+    width: 100%;
+    background-color: black;
+    margin: 10px 0;
+    height: 35px;
+    border-radius: 55px;
+    display: flex;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    opacity: 70%;
+    position: relative;
+    float: left;
+}
+.phone input {
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: white;
+    text-align: justify;    
+}
+.message-sub select{
+    max-width: 300px;
+    width: 100%;
+    background-color: black;
+    margin: 10px 0;
+    height: 35px;
+    border-radius: 55px;
+    opacity: 70%;
+    display: flex;
+    color: white;
+    padding: 0 0.4rem;
+    float: left;
+}
+.massage-sub select{
+    background: none;
+    outline: none;
+    border: none;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1rem;
+    color: wheat;   
+}
+.messagettt textarea{  
+    max-width: 600px;
+    width: 100%;
+    background-color: black;
+    margin: 10px 0;
+    height: 100px;
+    left: 6%;
+    border-radius: 10px;
+    opacity: 70%;
+    display: flex;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    position: relative;
+    float: left;
+    color: white;
+}
+#txtarea {
+    outline: none;
+    border-radius: 5px;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 1rem;
+
+    max-width: 600px;
+    height: 150px;
+    width: 100%;
+    background-color: black;
+    margin: 10px 0;
+    display: flex;
+    grid-template-columns: 15% 85%;
+    padding: 0 0.4rem;
+    opacity: 70%;
+    position: relative;
+    float: left;
+
+}
+#rect {
+    max-width: 33%;
+    width: 100%;
+    background-color: rgb(233, 227, 227);
+    margin: 10px 0;
+    height: 100px;
+    display: flex;
+    grid-template-columns: 15% 85%;
+    padding: 0 2rem;
+    position: relative;
+    float: left;
+    color: white;
+    background-image: url(./img/capcha.png);
+    background-repeat: no-repeat;
+    background-position:230px ;
+    background-size: 70px;
+}
+#cbox {
+    top: 3em;
+    left: 3em;
+    transform: scale(2);
+}
+#textver{
+    position: relative;
+    top: 2.5em;
+    left: 2.5em;
+    color: black;
+}
+#submit{
+    margin-top: 3em;
+    padding: 15px 110px;
+    font-size: 1em;
+    border-radius: 30px;
+    background: #2dde98;
+    color: #ffffff;
+}
+#submit:hover{
+    background-color: tomato;
+    font-size: 1em;
+    border-radius: 30px;
+}
+
+ @media only screen and (max-width:767px){
+    .container{
+        flex-direction: column;
+        padding: 0 15px 0 15px;
+    }
+    .notice{
+        font-size: 15px;
+    }
+    .input-field{
+        width: 60%;
+        align-items: center ;
+    }
+    .input-field-firstname{
+        width: 210px;
+    }
+    .input-field-lastname{
+        width: 210px;
+    }
+    div.input-gmail{
+        padding-left: 7px;
+        width: 210px;
+    }
+    div.gmail{
+        padding-left: 6px;
+    }
+    .phone3 >div{
+        width: 100px;
+
+    }
+    div.message-sub {
+        padding-left: 15px;
+    }
+    .verifical{
+        width: 10%;
+    }
+    #rect{
+       display: none;
+    }
+    #yourname {
+        font-size: 14px;
+    }
+    div.submit{
+        padding-left: 0px;
+    }
+}
+@media only screen and (min-width: 769px)and(max-width:1023px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    .input-field{
+        width: 60px;
+    }
+  
+} 
+
+
+

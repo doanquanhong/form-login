@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="form.css">
+    <script
+    src="https://kit.fontawesome.com/64d58efce2.js"
+    crossorigin="anonymous"
+  ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in form</title>
+</head> 
+<body>
+    <div class="container">
+        <div class="forms-container">
+            <div class="sign">
+            <form action="#" class="sign-in">
+                <h3 class="title">Contact form </h3>
+                <h6 class="notice">Please fill in your information and we'll be sending your order in no time.</h6>
+                <div class="row">
+                    <div id="yourname" class="col-1">Your name</div>
+
+                    <div id="input-name" class="col-2">
+                            <input class="input-field-firstname" type="text" placeholder="&#xf007; First name">    
+                        
+                            <input class="input-field-lastname" type="text" placeholder="&#xf007; Last name">                       
+                    </div>
+
+                </div>
+                <!-- gmail -->
+                <div class="row">
+                    <div id="mail" class="col-1"> Your Email</div>
+
+                    <div class="input-gmail col-2">
+                        <input type="text" placeholder="&#xf0e0; formabcd@gmail.com">
+                    </div>
+
+                </div>
+                <!-- phone -->
+                <div class="row">
+                        <div id="phone" class="col-1">Phone*</div>
+
+                        <div class="col-2">
+                            <input class="phone3" type="text" placeholder="###" onkeypress="return isNumberKey(event)" maxlength="3">
+                            <input class="phone3" type="text" placeholder="###" onkeypress="return isNumberKey(event)" maxlength="3">
+                            <input class="phone3" type="text" placeholder="###" onkeypress="return isNumberKey(event)" maxlength="3">
+                        </div>
+                        
+                </div>
+                <!-- message-subject -->
+                <div class="row">
+                    <div id="message-sub" class="col-1">Message Subject*</div>
+
+                    <div class="other col-2">
+                        
+                         <select name="mesessage" id="message-subject">
+                             <option value="other">Other</option>
+                             <option value="other1">Other 1</option>
+                             <option value="other2">Other 2</option>
+                             <option value="other 3">Other 3</option>
+                         </select>
+
+                    </div>
+                </div>
+                <!-- text-area -->
+                <div class="row">
+                    <div id="messagettt" class="col-1">Message*</div>
+
+                    <div class="col-2">                  
+                        <textarea name="" id="txtarea" cols="50" rows="7" placeholder="Xin mời bạn nhập...." ></textarea>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div id="verifical" class="col-1">Verification</div>
+
+                    <div id="rect" class="col-2">
+                        <input type="checkbox" name="" id="cbox" > 
+                        <p id="textver">I'm not robot</p>   
+                    </div>
+                </div>
+                    
+                <br>
+                <hr>
+                <!-- submit -->
+                <div class="submit">
+                    <label for="submit" > </label>
+                    <input type="submit" value="Submit" id="submit">
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
